@@ -14,14 +14,21 @@ import React, { useState } from 'react'
 import { useLink } from 'solito/link'
 
 export function HomeScreen() {
-  const linkProps = useLink({
+  const signupLinkProps = useLink({
     href: '/signup',
+  })
+
+  const loginLinkProps = useLink({
+    href: '/login',
   })
 
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <XStack>
-        <Button {...linkProps}>Link to user</Button>
+        <Button {...signupLinkProps}>Signup</Button>
+      </XStack>
+      <XStack>
+        <Button {...loginLinkProps}>Login</Button>
       </XStack>
     </YStack>
   )

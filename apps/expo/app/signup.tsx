@@ -1,6 +1,6 @@
 import { YStack, Text, Button, Spacer, XStack, H1, SizableText, Input, ScrollView } from "tamagui";
 import Keyring from "@polkadot/keyring";
-import { mnemonicGenerate, mnemonicToLegacySeed } from '@polkadot/util-crypto';
+import { mnemonicGenerate, mnemonicValidate } from '@polkadot/util-crypto';
 import { useCallback, useEffect, useState } from "react";
 import * as SecureStore from 'expo-secure-store';
 import { KeyringPair } from "@polkadot/keyring/types";
